@@ -1,0 +1,140 @@
+.feature {
+  background-color: var(--verylightGray);
+}
+
+/* .feature__intro {
+  border-bottom: 0.001px solid rgba(199, 199, 199, 0.733);
+  border-width: calc(100% - 3rem);
+}
+
+.feature__item:not(:last-child) {
+  border-bottom: 1px solid rgba(192, 191, 191, 0.733);
+  padding: 1.75rem;
+}
+
+.feature__item:last-child {
+  padding: 1.75rem;
+} */
+
+.feature__intro {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__intro h2 {
+  margin-bottom: 0;
+  font-weight: 300;
+  color: var(--darkblue);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.feature__intro p {
+  font-weight: 100;
+  margin-bottom: 2.25rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  padding: 0;
+  text-align: center;
+}
+
+.feature__item {
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature__item .feature__icon {
+  padding-bottom: 0.8rem;
+}
+
+.feature__item .feature__icon img {
+  height: 5.1875rem;
+  width: 5.1875rem;
+}
+
+.feature__item .feature__title h3 {
+  text-align: center;
+  font-weight: 300;
+  margin: 0;
+  padding: 1rem;
+  color: var(--darkblue);
+}
+
+.feature__item .feature__discription p {
+  font-weight: 100;
+  margin-bottom: 3.5rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  .feature {
+    margin: 0;
+    padding: 2.5rem 6rem 0 2.2269125rem;
+    /* margin: 5rem; */
+  }
+  .feature__intro {
+    padding-left: 0;
+    padding-left: 1.5rem;
+  }
+  .feature__content .feature__intro p {
+    width: 63%;
+    text-align: left;
+  }
+  .feature__grid {
+    display: flex;
+    /* flex-wrap: wrap; */
+  }
+  .feature__intro {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .feature__item {
+    flex: 1;
+    padding: 0.9375rem;
+    padding-left: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .feature__intro h2 {
+    font-size: 2.5rem;
+  }
+  .feature__item .feature__title h3 {
+    font-size: 1.35rem;
+    margin: 0;
+    padding: 0;
+  }
+  .feature__item .feature__discription p {
+    margin-bottom: 0;
+    font-size: 0.8rem;
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 4.3rem;
+  }
+  #para {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  #simple {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 40em) and (max-width: 64em) {
+  .feature__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .feature__item {
+    flex: 0 0 49.32%;
+  }
+}
