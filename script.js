@@ -18,8 +18,8 @@ btnHamburger.addEventListener("click", function () {
     body.classList.add("noscroll");
     header.classList.add("open");
     fadeElems.forEach(function (elements) {
-      elements.classList.remove("fade-out");
       elements.classList.add("fade-in");
+      elements.classList.remove("fade-out");
     });
   }
 });
